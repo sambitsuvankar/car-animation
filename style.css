@@ -1,0 +1,272 @@
+*{
+    margin: 0 0 ;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.sky{
+    background-image: url("background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+}
+.tree{
+    background-image: url("trees.png");
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 50vh;
+    /* animation: treeshake linear 300s infinite; */
+    margin: 0;
+}
+
+.track{
+    background-image: url(track.png);
+    position: relative;
+    height: 50vh;
+    width: 800vw;
+    background-repeat: repeat-x;
+    margin: 0;
+    top: 50vh;
+    background-size: cover;
+    animation:  trackMove 15s linear infinite;
+    
+}
+
+
+
+@keyframes trackMove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes tyres {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake{
+    0%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}
+@keyframes shakefer{
+    0%{
+        transform: translateY(-4px) translateX(0px);
+    }
+    14%{
+        
+        transform: translateY(-4px) translateX(80px);
+    }
+    28%{
+        transform: translateY(4px) translateX(250px);
+    }
+    52%{
+        transform: translateY(-4px) translateX(50px);
+    }
+    66%{
+        transform: translateY(-4px) translateX(0px);
+    }
+    80%{
+        transform: translateY(4px) translateX(-20px);
+    }
+    100%{
+        transform: translateY(4px) translateX(0px);
+    }
+}
+@keyframes shakepor{
+    0%{
+        transform: translateY(-20px) translateX(0px);
+    }
+    14%{
+        
+        transform: translateY(-2px) translateX(-30px);
+    }
+    28%{
+        transform: translateY(30px) translateX(0px);
+    }
+    52%{
+        transform: translateY(-2px) translateX(80px);
+    }
+    66%{
+        transform: translateY(30px) translateX(180px);
+    }
+    80%{
+        transform: translateY(2px) translateX(90px);
+    }
+    100%{
+        transform: translateY(-10px) translateX(0px);
+    }
+}
+@keyframes shakemas{
+    0%{
+        transform: translateY(-20px) translateX(0px);
+    }
+    14%{
+        
+        transform: translateY(-4px) translateX(-100px);
+    }
+    28%{
+        transform: translateY(10px) translateX(-30px);
+    }
+    52%{
+        transform: translateY(-4px) translateX(20px);
+    }
+    66%{
+        transform: translateY(-20px) translateX(90px);
+    }
+    80%{
+        transform: translateY(4px) translateX(30px);
+    }
+    100%{
+        transform: translateY(10px) translateX(0px);
+    }
+}
+
+@keyframes treeshake{
+    
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+.car1{
+    background-image: url(car_body.png);
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 55%;
+    left: 7%;
+    animation: shake linear 2s infinite;
+}
+
+.wheel1 img{
+    height: 9vh;
+    width: 3.8vw;
+    position: relative;
+    left: 2.45vw;
+    top: 3.9vh;
+    animation: tyres linear 0.1s infinite;
+}
+.wheel2 img{
+    height: 8.5vh;
+    width: 4vw;
+    position: relative;
+    left: 12.25vw;
+    top: -5.5vh;
+    animation: tyres linear 0.1s infinite;
+
+}
+
+
+.car2{
+    background-image: url(ferrari.png);
+    position: absolute;
+    height: 10%;
+    width: 19%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 88%;
+    left: 7%;
+    animation: shakefer linear 10s infinite;
+}
+
+.wheel3 img{
+    height: 7.9vh;
+    width: 3.7vw;
+    position: relative;
+    left: 1.8vw;
+    top: 4vh;
+    animation: tyres linear 0.2s infinite;
+}
+.wheel4 img{
+    height: 7.8vh;
+    width: 3.7vw;
+    position: relative;
+    left: 13.5vw;
+    top: -4vh;
+    animation: tyres linear 0.2s infinite;
+
+}
+
+
+.car3{
+    background-image: url(porsche.png);
+    position: absolute;
+    height: 9%;
+    width: 16%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 72%;
+    left: 12%;
+    animation: shakepor linear 15s infinite;
+}
+
+.wheel5 img{
+    height: 7.5vh;
+    width: 3.8vw;
+    position: relative;
+    left: 1.25vw;
+    top: 3.9vh;
+    animation: tyres linear 0.15s infinite;
+}
+.wheel6 img{
+    height: 7.5vh;
+    width: 3.8vw;
+    position: relative;
+    left: 10.8vw;
+    top: -4.3vh;
+    animation: tyres linear 0.15s infinite;
+
+}
+
+
+.car4{
+    background-image: url(maserati.png);
+    position: absolute;
+    height: 10%;
+    width: 19%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 58%;
+    left: 20%;
+    animation: shakemas linear 10s infinite;
+}
+
+.wheel7 img{
+    height: 7.3vh;
+    width: 4vw;
+    position: relative;
+    left: 1.7vw;
+    top: 4.8vh;
+    animation: tyres linear 0.15s infinite;
+}
+.wheel8 img{
+    height: 7.3vh;
+    width: 4vw;
+    position: relative;
+    left: 13.8vw;
+    top: -2.5vh;
+    animation: tyres linear 0.15s infinite;
+
+}
